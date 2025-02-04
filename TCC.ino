@@ -18,7 +18,7 @@
 #define MQTT_TOPIC "IFSCTub/ETCC001"
 
 // pino do sendor de temperatura
-#define PIN_DHT 2     // Digital pin connected to the DHT sensor
+#define PIN_DHT 15     // Digital pin connected to the DHT sensor
 
 
 // objetos padrao
