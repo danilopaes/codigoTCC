@@ -15,7 +15,7 @@
 #define PIN_DHT 4         // Pino do sensor DHT
 #define PIN_TDS 15        // Pino do sensor TDS
 #define PIN_GUVA 34       // Pino do sensor UV
-#define PIN_LIGHT 27      // Pino do sensor de luz
+#define PIN_LIGHT 36      // Pino do sensor de luz
 
 // Objetos padrão
 DynamicJsonDocument mqttMsg(MSG_SIZE);
