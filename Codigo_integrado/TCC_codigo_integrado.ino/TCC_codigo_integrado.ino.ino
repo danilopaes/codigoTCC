@@ -119,9 +119,12 @@ void capture_uv_data() {
 
 // Função para capturar dados do sensor de luz
 void capture_light_data() {
+  Serial.println("Capturando dados de luz..."); // Teste para ver se a função está rodando
+  
   int lightValue = analogRead(PIN_LIGHT);
+  Serial.printf("Valor lido: %d\n", lightValue);
 
-  String lightLevel;
+  const char* lightLevel;
   if (lightValue < 40) {
     lightLevel = "Escuro";
   } else if (lightValue < 800) {
@@ -134,7 +137,7 @@ void capture_light_data() {
     lightLevel = "Muito Brilhante";
   }
 
-  Serial.printf("Luz - Valor: %d, Nível: %s\n", lightValue, lightLevel.c_str());
+  Serial.printf("Luz - Valor: %d, Nível: %s\n", lightValue, lightLevel);
 
   // Envia dados para MQTT
   initialize_json();
